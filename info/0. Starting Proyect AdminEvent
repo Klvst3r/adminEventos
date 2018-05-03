@@ -18,5 +18,24 @@
 		users
 
 
-3. Generating Migrations
+3. Generating Migrations and Models
+	Firs Model and migration of Eventos
 	$ php artisan make:model Evento -m
+
+	Table Organizadores
+	$ php artisan make:model Organizador -m
+
+	Modify Migration in Spanish
+
+	Table Auspiciador
+	$ php artisan make:model Auspiciador
+
+	In this case need the migration of this table
+	$ php artisan make:migration create_auspiciadores_table
+
+	Create Relation of Tables Auspiciador and Eventos
+	$ php artisan make:migration create_auspiciador_evento_table
+
+	Table User
+	<This Table exist with the Project>
+	
