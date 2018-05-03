@@ -1,0 +1,22 @@
+0. Installing Proyecto in Ver 5.2 of Laravel and conecting with GitHub
+	$ composer create-project --prefer-dist laravel/laravel adminEventos "5.2.*"
+
+1. Conecting with GitHub
+	echo "# adminEventos" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git remote add origin git@github.com:Klvst3r/adminEventos.git
+	git push -u origin master
+
+2. Checking DB Structure
+	Bd.pdf
+	Tables
+		eventos
+		auspiciadores
+		organizadores
+		users
+
+
+3. Generating Migrations
+	$ php artisan make:model Evento -m
